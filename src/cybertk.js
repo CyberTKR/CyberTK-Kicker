@@ -69,15 +69,7 @@ Bireyler sizede selam Olsun ..!\n\
 \n\
 =========================================");
 
-const auth = {
-	authToken: 'Eurpzj6cJppICKt3IML2.Q7LN6Ix1FE31xkWvdH5c8G.v3OFBvPDDmQjAwcU5o807rTUdEjrP4ihIXz+1/FKGjk=',
-	certificate: '2be4d787a69e863c43b2634b44f450d4e17d4ce6604a3acab6883cb09e7af071',
-  email: '',
-	password: ''
-}
-
-//let client =  new LineConnect();
-let client =  new LineConnect(auth);
+let client =  new LineConnect();
 
 client.startx().then(async (res) => {
 	while(true) {
