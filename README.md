@@ -18,7 +18,7 @@
 </br><b>✦   npm i -g npm </b>
 </hr>
 </br><b>✦   Bot İs Running </b>
-</br><b>✦    http://github.com/CyberTKR/CyberJS.git </b>
+</br><b>✦   http://github.com/CyberTKR/CyberJS.git </b>
 </br><b>✦   cd CyberJS & npm install </b>
 </br><b>✦   npm start </b>
 <b><hr/></b>
