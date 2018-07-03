@@ -17,7 +17,7 @@
 </br><b>✦    Nodejs Version update  </b>
 </br><b>✦   npm i -g npm </b>
 </hr>
-</br><b>✦   Bot İs Running </b>
+<br><b>✦   Bot İs Running </b></br>
 </br><b>✦   http://github.com/CyberTKR/CyberJS.git </b>
 </br><b>✦   cd CyberJS & npm install </b>
 </br><b>✦   npm start </b>
