@@ -21,6 +21,8 @@
 <br><b>✦   git clone https://gitlab.com/CyberTKR/CyberTK-Kicker</b></br></b></br>
 <br><b>✦   cd CyberTK-Kicker </b></br>
 <br><b>✦   chmod +x cybertkautoprogram </b></br>
+<br><b>✦   ./cybertkautoprogram </b></br>
+
 
 <br><b>✦   Bot İs Running </b></br>
 <br><b>✦   sudo apt-get update -sudo apt-get install build-essential checkinstall libssl-dev</b></br>
@@ -29,7 +31,7 @@
 <br><b>✦   nvm use v8.9.1</b></br>
 <br><b>✦   nvm ls</b></br>
 <br><b>✦   nvm alias default node</b></br>
-================= [MANUEL ÇALIŞTIRMA KOMUTLARI ÜSTTEKİLERİ YAZDIKTAN SONRA] =================<b><hr/></b>
+<br><b>================= [MANUEL ÇALIŞTIRMA KOMUTLARI ÜSTTEKİLERİ YAZDIKTAN SONRA] =================</b></br>
 <br><b>✦   Bot İs Running </b></br>
 <br><b>✦   sudo apt-get install nodejs</b></br>
 <br><b>✦   https://gitlab.com/CyberTKR/CyberTK-Kicker</b></br>
