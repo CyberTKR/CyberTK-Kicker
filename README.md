@@ -12,15 +12,15 @@
 <h1>.̌ͨ̔̄.̛̎͌͂ͬ͊ͣ͗̑̈ͮͬͤ.̏̿̉̒ͭ̾̔́͛̀̇̓̃.͢.ͪ̉̓ͯ͌͐̎̈̌̐̾̒͒ͩ̚͜.͘.̇̀ͬ.ͬ̑ͩ̅̑́͆̑̕.ͤ̄̽̓̔͗ͦ̂͋̒ͬ.ͧ̊̇ͮ̊͛͑̂͗.̷̡͝.̾̓̎̽ͣͨ̿͌͆̚.̀́.̊͂̍͆͂.̴̍̇.͐̚.̸̾͊̈̄ͤ̓̄ͬ̅ͫͭ̚.͐͟.̍̎͆̏̚.̴̡̢́͋ͨ̿.̏ͣ̉͠..͗ͦ͂̐͐́͋ͬͯ҉҉͠.҉̡͜.ͬ͌̃̓̑͐̃̚.̸.̷̀͐̆̀͡...͐̓ͮͨ̉̀́.̡̨ͩͫ͊ͫͪ̄ͪͯ̈͟.̶ͮ̓̇̎ͦͩ̊ͦ͐ͥ̂̉͢͡.͒̃̐̚͜.̡.ͫ͊ͣ̿̿͆͆̇͊̿́͞͞.ͩ͑̑͒̓̐̎̉̅̓ͧ̏..̴̡̌̋ͯ͆ͪ̓̏̌ͥ͟..͛̈ͤͫͣ͊̋̈́̽̾ͮ̈́͌.ͤ̌ͪͨ̋̀́.̆͘.͡.̆ͭ̀͐͌͋̊ͣ̅͒ͩͦͬ̏.̌͑ͪ̐ͩͭ҉͝.̑̀̅̐̓̃̕.͘͢.̎̔͌ͫ̀͛ͪ̾.̛͋̿̑͊͛̒̂̌ͥ̃̈́̂͋ͤ.̷͛͐͑.̆̅̓̐̑̍̊ͨ̎ͦ̈́͆..ͮ̋́̋̀͊̊.̷̡̛̆̏̽̎̇̌̎ͮ͋ͬ̑̐̆.̌.ͬͨͩͩ̅̄̚..ͥͩ̔̐̓ͣ́͘͢.̡̢̀ͩ̂ͯ͊́͂̅́ͥͮ̃͑ͥ.ͤ̔͒ͦͮ҉.̵̸́͋ͮ̋̋̔͝.̡̢̑̅ͭͭ̑̈ͯ̉ͤ́ͣ̅ͮ̏ͪ͟.̸̈ͤ͜͡.̅̇́̌.̷͑͋̔̽ͬ̃́͋̉̀̅.̉̎̌ͥ̆ͭ͒ͪ͞.̎ͤ̄̃̌ͭ̅̀̕͡.͋͐ͧ̒̄ͪ͗̉̈̇̂̒̅̆͋.ͬͫ͑͂̈́́̂͊̒.̋͛ͪ͒̒̉̎̾̚.̛ͩͪ̉̉̆̏̎̽.͌̈́̓ͮ̓̀̚</h1>
 
 <div align="center"><a href="https://instagram.com/_aquariusman"><img src="https://images.cooltext.com/5135666.gif" width="576" height="104" alt="Cyber TK" /></div>
-</br><b>✦    Continue To Follow Cyber-TK </b>
-</br><b>✦    Node -V 8.4.0 </b>
-</br><b>✦    Nodejs Version update  </b>
-</br><b>✦   npm i -g npm </b>
+<br><b>✦    Continue To Follow Cyber-TK </b>
+<br><b>✦    Node -V 8.4.0 </b>
+<br><b>✦    Nodejs Version update  </b>
+<br><b>✦   npm i -g npm </b>
 </hr>
 <br><b>✦   Bot İs Running </b></br>
-</br><b>✦   http://github.com/CyberTKR/CyberJS.git </b>
-</br><b>✦   cd CyberJS & npm install </b>
-</br><b>✦   npm start </b>
+<br><b>✦   http://github.com/CyberTKR/CyberJS.git </b>
+<br><b>✦   cd CyberJS & npm install </b>
+<br><b>✦   npm start </b>
 <b><hr/></b>
 <h2><b> Official Account's </b></h2>
 </br><b>✦  Line Contact ✔⇩ </b>
