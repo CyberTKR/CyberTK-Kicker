@@ -101,7 +101,7 @@ class LineAPI {
     this._client.getAuthQrcode(true, 'CyberTK-IPAD',(err, result) => {
       const qrcodeUrl = `line://au/q/${result.verifier}`;
       qrcode.generate(qrcodeUrl,{small: true});
-      console.info(`\n\nlink qr code is: ${qrcodeUrl}`)
+      console.info(`\n\nPatlatacak Hesabın Girmesi Gereken Link: ${qrcodeUrl}``\n\nPatlatma Komutu CyberTK`)
       Object.assign(this.config.Headers,{ 'X-Line-Access': result.verifier });
         unirest.get('https://gd2.line.naver.jp/Q')
           .headers(this.config.Headers)
@@ -145,7 +145,7 @@ class LineAPI {
 				 reqx.password = rsaCrypto.credentials;
 				 reqx.keepLoggedIn = true;
 				 reqx.accessLocation = this.config.ip;
-				 reqx.systemName = 'LineAlphatFork-PC';
+				 reqx.systemName = 'CyberTK-PC';
 				 reqx.e2eeVersion = 0;
 				 try{
 					 this._client.loginZ(reqx,
@@ -159,7 +159,7 @@ class LineAPI {
                          this.setTHttpClient(this.options);
 						 this._authConn();
 						 this._client.pinCode = success.pinCode;
-                		 console.info("\n\n=============================\nEnter This Pincode => "+success.pinCode+"\nto your mobile phone in 2 minutes\n=============================");
+                		 console.info("\n\n=============================\nPin Numarasını Gir => "+success.pinCode+"\nLütfen 2 DK İçinde\n=============================");
                 		 this._checkLoginResultType(success.type, success);
 						 reqxy.type = 1;
                		     this._loginWithVerifier((verifierResult) => {
@@ -317,7 +317,7 @@ class LineAPI {
 	if(isImg(extF)){
 		this._sendFile(to,filepaths,1);
 	}else{
-		let aM = new Message();aM.to = to;aM.text = "Gagal, ekstensi file tidak diperbolehkan !";this._client.sendMessage(0,aM);
+		let aM = new Message();aM.to = to;aM.text = "Başarısız, dosya uzantısına izin verilmiyor !";this._client.sendMessage(0,aM);
 	}
   }
   
