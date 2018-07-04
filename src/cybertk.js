@@ -1,4 +1,4 @@
-const LineConnect = require('./connect');
+const LineConnect = require('./giris');
 const LINE = require('./kicker.js');
 console.info("\n\
 ╔══╗\n\
