@@ -207,9 +207,9 @@ class LineAPI {
       this.certificate = result.certificate;
       this.authToken = result.authToken;
     } else if (result.type === LoginResultType.REQUIRE_QRCODE) {
-      console.log('require QR code');
+      console.log('QR kodu gerektiriyor ..!');
     } else if (result.type === LoginResultType.REQUIRE_DEVICE_CONFIRM) {
-      console.log('require device confirm');
+      console.log('\nCihaz onayı gerekiyor..!');
     } else {
       throw new Error('unkown type');
     }
