@@ -52,7 +52,7 @@ Zaman Çok tatlı gelir.Önem olan O beklediğin\n\
 Şey Eline Geçtiğinde Onu nasıl kullandığındır.\n\
 Ve Son Olarak ..\n\
 Bazı Şeyler İçin kimseye boyun Eğmeyin İster Dost Ol\n\
-İster Düşman Dostunun Sırf Kendisi Üstün Olsun Diye\n\
+İster Düşman Dostu Sırf Kendisinden Üstün Olmasın Diye\n\
 Başklarının botunu bile Sizden Saklayanlara inat ben\n\
 Yapma İmkanı veriyorum\n\
 Hayat Burdan İbaret Değil..!\n\
