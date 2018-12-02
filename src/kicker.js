@@ -1,3 +1,27 @@
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
 const LineAPI = require('./api');
 const request = require('request');
 const fs = require('fs');
@@ -7,7 +31,30 @@ const path = require('path');
 const rp = require('request-promise');
 const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
-
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/                                    
 const myBot = [''];
 var groupList = new Array();
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";
@@ -89,7 +136,30 @@ class LINE extends LineAPI {
 			merhaba: 1 
         }
     }
-  
+ /*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/   
 /*
 ███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█ 
 ████▓▓▓▓╬╬▓█████╬╬╬╬╬╬███▓╬╬╬╬╬╬╬╬╬╬╬╬╬█ 
@@ -131,7 +201,30 @@ class LINE extends LineAPI {
 			    this._sendMessage(message,"ヽ(^。^)ノ")
 		    }else{console.info("muted");}
         }
-				
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
 		if(operation.type == 16 && this.stateStatus.merhaba == 1){
 			let merhaba = new Message();
 			merhaba.to = operation.param1;
@@ -153,7 +246,30 @@ class LINE extends LineAPI {
 		    this._autoLike(config.chanToken,limitposts,komenTL);
 		}
 	}
-
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
     async searchGroup(gid) {
         let listPendingInvite = [];
         let thisgroup = await this._getGroups([gid]);
@@ -171,7 +287,30 @@ class LINE extends LineAPI {
             listPendingInvite
         }
     }
-
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
 	
 	async searchRoom(rid) {
         let thisroom = await this._getRoom(rid);
@@ -183,8 +322,40 @@ class LINE extends LineAPI {
             listMemberr
         }
     }
-
-
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*//*
+    async cybertk(cybertk, seq, param, lockt) {
+        const [ cmd, payload ] = textMessages.split(' ');
+		const gTicket = textMessages.split('line://ti/g/');
+		const linktxt = textMessages.split('http');
+        const txt = cybertk.toLowerCase();
+        const messageID = seq.id;
+		const cot = txt.split('@');
+		const com = txt.split(':');
+		const cox = txt.split(' ');
+*/		
     async textMessage(textMessages, seq, param, lockt) {
         const [ cmd, payload ] = textMessages.split(' ');
 		const gTicket = textMessages.split('line://ti/g/');
@@ -196,7 +367,55 @@ class LINE extends LineAPI {
 		const cox = txt.split(' ');
 		
       if(txt === 'cybertk' && this.stateStatus.kicker == 1 && seq.toType == 2) {
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
           let { listMember } = await this.searchGroup(seq.to);
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
           for (var i = 0; i < listMember.length; i++) {
               if((listMember[i].mid)){
                   this._kickMember(seq.to,[listMember[i].mid])
@@ -206,5 +425,28 @@ class LINE extends LineAPI {
     }
 
 }
-
+/*                                                                                                                                                 
+                                             bbbbbbbb                                                                                            
+        CCCCCCCCCCCCC                        b::::::b                                                 TTTTTTTTTTTTTTTTTTTTTTTKKKKKKKKK    KKKKKKK
+     CCC::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+   CC:::::::::::::::C                        b::::::b                                                 T:::::::::::::::::::::TK:::::::K    K:::::K
+  C:::::CCCCCCCC::::C                         b:::::b                                                 T:::::TT:::::::TT:::::TK:::::::K   K::::::K
+ C:::::C       CCCCCCyyyyyyy           yyyyyyyb:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrrTTTTTT  T:::::T  TTTTTTKK::::::K  K:::::KKK
+C:::::C               y:::::y         y:::::y b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r       T:::::T          K:::::K K:::::K   
+C:::::C                y:::::y       y:::::y  b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r      T:::::T          K::::::K:::::K    
+C:::::C                 y:::::y     y:::::y   b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r     T:::::T          K:::::::::::K     
+C:::::C                  y:::::y   y:::::y    b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r     T:::::T          K:::::::::::K     
+C:::::C                   y:::::y y:::::y     b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr     T:::::T          K::::::K:::::K    
+C:::::C                    y:::::y:::::y      b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r                 T:::::T          K:::::K K:::::K   
+ C:::::C       CCCCCC       y:::::::::y       b:::::b     b:::::be:::::::e            r:::::r                 T:::::T        KK::::::K  K:::::KKK
+  C:::::CCCCCCCC::::C        y:::::::y        b:::::bbbbbb::::::be::::::::e           r:::::r               TT:::::::TT      K:::::::K   K::::::K
+   CC:::::::::::::::C         y:::::y         b::::::::::::::::b  e::::::::eeeeeeee   r:::::r               T:::::::::T      K:::::::K    K:::::K
+     CCC::::::::::::C        y:::::y          b:::::::::::::::b    ee:::::::::::::e   r:::::r               T:::::::::T      K:::::::K    K:::::K
+        CCCCCCCCCCCCC       y:::::y           bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr               TTTTTTTTTTT      KKKKKKKKK    KKKKKKK
+                           y:::::y                                                                                                               
+                          y:::::y                                                                                                                
+                         y:::::y                                                                                                                 
+                        y:::::y                                                                                                                  
+                       yyyyyyy                                                                                                                   
+*/  
 module.exports = new LINE();
