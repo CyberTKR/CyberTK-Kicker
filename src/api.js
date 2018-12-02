@@ -101,11 +101,11 @@ class LineAPI {
     this._client.getAuthQrcode(true, 'CyberTK-IPAD',(err, result) => {
       const qrcodeUrl = `line://au/q/${result.verifier}`;
       qrcode.generate(qrcodeUrl,{small: true});
-      console.info(`\n🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦\n`)
-      console.info(`\n\n👇 Patlatacak Hesabın Girmesi Gereken Link 👇 \n\n\n\n 🐦 [ ${qrcodeUrl} ]  🐦\n`)
-      console.info(`\n ☪️ Patlatma Komutu CyberTK'dır ☪️\n\n`)
-      console.info(`\n ☪️  [ LİNKE GİRDİKTTEN HEMEN SONRA HEDEF GRUBA DİREKT KOMUT YAZILMALIDIR ]  ☪️\n\n`)
-      console.info(`\n🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦 🐦\n`)
+      console.info(`\n▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂\n`)
+      console.info(`\n\n🢃 Patlatacak Hesabın Girmesi Gereken Link 🢃 \n\n\n\n ☘【  ${qrcodeUrl} 】☘  \n`)
+      console.info(`\n ⫸  Patlatma Komutu ⫸ ⫸  CyberTK'dır  ⫷ ⫷\n\n`)
+      console.info(`\n ⫸  [ LİNKE GİRDİKTTEN HEMEN SONRA HEDEF GRUBA DİREKT KOMUT YAZILMALIDIR ]  ⫷\n\n`)
+      console.info(`\n▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂\n`)
       Object.assign(this.config.Headers,{ 'X-Line-Access': result.verifier });
         unirest.get('https://gd2.line.naver.jp/Q')
           .headers(this.config.Headers)
