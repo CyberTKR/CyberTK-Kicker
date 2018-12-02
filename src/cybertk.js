@@ -57,21 +57,6 @@ Başklarının botunu bile Sizden Saklayanlara inat ben\n\
 Yapma İmkanı veriyorum\n\
 Hayat Burdan İbaret Değil..!\n\
 \n\
-             Hayat Ebedi Değil Ölüm Var\n\
-\n\
-Yapmanın sadece 3 4 saatimi aldığı\n\
-şu basit şey için Cahilliği es geçtim\n\
-Tek amacı Şurda Barınmak Olan\n\
-Ve bunun İçin Kendini satan Kişiliğini\n\
-Satan En Önemlisi Dostunu satan\n\
-Acizce Annesini kardeşini sevgilisini\n\
-çocugunu karısını anlıklarda gezdiren soysuz \n\
-insan Müsvetteleri ve Bireyler sizede selam Olsun ..!\n\
-Ve Bu tipteki insanlar Bunu utanmadan Kullanıcağınızdan\n\
-Eminim Namusunu çocuğunu Annesini Karısını \n\
-Düşünmeyen Yüzsüzlüğü önemsermi\n\
-Hayır !\n\
-\n\
 =========================================");
 
 let client =  new LineConnect();
